@@ -40,11 +40,18 @@
       font-weight: bold;
       color: #007acc;
     }
-
+    h1 a {
+    text-decoration: none;
+    color: inherit;
+    }
+    h1 a:hover {
+    text-decoration: underline;
+    color: #007acc; /* یا هر رنگ دلخواه برای حالت hover */
+    }
     .nav-links {
-  margin-left: auto;
-  display: flex;
-  gap: 15px;
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
     }
     
     .container {
@@ -130,9 +137,8 @@
 <body>
 
   <header>
-    <h1>Mohammad&nbspAli&nbspBazrafshani</h1>
+    <h1><a href="index.html">Mohammad&nbspAli&nbspBazrafshani</a></h1>
     <nav class="nav-links">
-      <a href="index.html">🏠</a>
       <a href="cv.html">CV</a>
       <a href="#">Research</a>
       <a href="#">Publications</a>
