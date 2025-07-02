@@ -143,10 +143,43 @@
       margin-top: 4rem;
       padding: 1rem;
       }
-      .cv-entry img {
-      width: 60px;
-      height: auto;
-      }
+.cv-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.cv-entry img {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.cv-text {
+  flex-grow: 1;
+}
+
+.cv-text .position {
+  display: block;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.cv-text .institution {
+  display: block;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.cv-entry .date {
+  white-space: nowrap;
+  font-size: 0.85rem;
+  color: #666;
+}
+
     
     @media (max-width: 768px) {
       .container {
@@ -201,14 +234,14 @@
 
   <h2>Research & Education</h2>
 
-  <div class="cv-entry">
-    <img src="images/test1.png" alt="Harvard">
-    <div class="cv-text">
-      <span class="position">Postdoctoral Fellow</span>
-      <span class="institution">Harvard University, USA</span>
-    </div>
-    <div class="date">2024 - present</div>
+<div class="cv-entry">
+  <img src="images/test1.png" alt="Harvard">
+  <div class="cv-text">
+    <span class="position">Postdoctoral Fellow</span>
+    <span class="institution">Harvard University, USA</span>
   </div>
+  <div class="date">2024 - present</div>
+</div>
 
 <div class="cv-entry">
   <img src="images/test1.png" alt="Harvard" style="width: 80px;">
