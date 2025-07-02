@@ -4,9 +4,171 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CV – Mohammad Ali Bazrafshani</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+    }
+
+    .cv-entry {
+      display: flex;
+      align-items: flex-start;
+      margin: 1rem 0;
+    }
+
+    .cv-entry img {
+      width: 60px;
+      height: auto;
+      margin-right: 1rem;
+    }
+
+    .cv-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cv-text .position {
+      font-weight: bold;
+    }
+
+    .cv-text .institution {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .date {
+      margin-left: auto;
+      font-size: 0.9rem;
+      color: #888;
+      min-width: 90px;
+    }
+
+    .cv-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>My CV</h1>
-  <p>This is my academic and professional CV.</p>
+
+  <h1>CV</h1>
+  <p>For more information, please see my full <a href="#">CV</a>.</p>
+
+  <h2>Research & Education</h2>
+
+  <div class="cv-entry">
+    <img src="images/harvard.png" alt="Harvard">
+    <div class="cv-text">
+      <span class="position">Postdoctoral Fellow</span>
+      <span class="institution">Harvard University, USA</span>
+    </div>
+    <div class="date">2024 - present</div>
+  </div>
+
+  <div class="cv-entry">
+    <img src="images/imperial.png" alt="Imperial College">
+    <div class="cv-text">
+      <span class="position">PhD Student</span>
+      <span class="institution">Imperial College London, UK</span>
+    </div>
+    <div class="date">2019 - 2024</div>
+  </div>
+
+  <div class="cv-entry">
+    <img src="images/leeds.png" alt="Leeds">
+    <div class="cv-text">
+      <span class="position">Visiting Researcher</span>
+      <span class="institution">University of Leeds, UK</span>
+    </div>
+    <div class="date">2022</div>
+  </div>
+
+  <div class="cv-entry">
+    <img src="images/cambridge.png" alt="Cambridge">
+    <div class="cv-text">
+      <span class="position">MEng Engineering</span>
+      <span class="institution">University of Cambridge, UK</span>
+    </div>
+    <div class="date">2015 - 2019</div>
+  </div>
+
+  <h2>Employment</h2>
+
+  <div class="cv-entry">
+    <img src="images/imperial.png" alt="Imperial">
+    <div class="cv-text">
+      <span class="position">Graduate Teaching Assistant</span>
+      <span class="institution">Imperial College London, UK</span>
+    </div>
+    <div class="date">2019 - 2023</div>
+  </div>
+
+  <div class="cv-entry">
+    <img src="images/nagwa.png" alt="Nagwa">
+    <div class="cv-text">
+      <span class="position">Physics Video Developer</span>
+      <span class="institution">Nagwa, UK</span>
+    </div>
+    <div class="date">2020 - 2021</div>
+  </div>
+
+  <div class="cv-entry">
+    <img src="images/fluidic.png" alt="Fluidic">
+    <div class="cv-text">
+      <span class="position">Graduate Software Engineering Intern</span>
+      <span class="institution">Fluidic Analytics, UK</span>
+    </div>
+    <div class="date">2019</div>
+  </div>
+
+  <div class="cv-entry">
+    <img src="images/pa.png" alt="PA Consulting">
+    <div class="cv-text">
+      <span class="position">Data Science Intern</span>
+      <span class="institution">PA Consulting, UK</span>
+    </div>
+    <div class="date">2018</div>
+  </div>
+
+  <div class="cv-entry">
+    <img src="images/spt.png" alt="SPT Labtech">
+    <div class="cv-text">
+      <span class="position">Engineering Intern</span>
+      <span class="institution">SPT Labtech, UK</span>
+    </div>
+    <div class="date">2017</div>
+  </div>
+
+  <h2>Awards, Interests, and Other Achievements</h2>
+  <ul>
+    <li><strong>Early Career Committee Member</strong> of the <em>ISPO Trent International Prosthetics Symposium 2025</em></li>
+    <li><strong>Winner of the Amazon Prize</strong> for Outstanding Achievement in Robotics 2023 <em>Late stage</em></li>
+  </ul>
+
 </body>
 </html>
