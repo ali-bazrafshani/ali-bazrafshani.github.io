@@ -2,102 +2,255 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CV – Mohammad Ali Bazrafshani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1.0">
+  <title>Mohammad&nbspAli&nbspBazrafshani</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      background-color: #f9f9f9;
-      color: #333;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('background1.png');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
     }
-
-    h2 {
-      color: #2c3e50;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.3rem;
-      margin-top: 2rem;
-    }
-
-    .cv-entry {
-      display: flex;
-      align-items: flex-start;
-      margin: 1rem 0;
-    }
-
-    .cv-entry img {
-      width: 60px;
-      height: auto;
-      margin-right: 1rem;
-    }
-
-    .cv-text {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .cv-text .position {
-      font-weight: bold;
-    }
-
-    .cv-text .institution {
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    .date {
-      margin-left: auto;
-      font-size: 0.9rem;
-      color: #888;
-      min-width: 90px;
-    }
-
-    .cv-block {
+    header {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #2c3e50;
+    }
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #555;
+      transition: all 0.2s ease-in-out;
+    }
+    nav a:hover {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #007acc;
+    }
+    h1 a {
+    text-decoration: none;
+    color: inherit;
+    }
+    h1 a:hover {
+    font-weight: bold;
+    color: #007acc;
+    }
+    .nav-links {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+    }
+    
+    .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    border-radius: 8px;
     }
 
-    ul {
-      padding-left: 1.5rem;
+    .sidebar {
+      width: 250px;
+      padding-right: 2rem;
+      border-right: 1px solid #ddd;
     }
 
-    li {
-      margin-bottom: 0.8rem;
+    .sidebar img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 1rem;
     }
 
-    a {
+    .sidebar h2 {
+      margin: 0.5rem 0;
+      white-space: normal;
+      word-break: keep-all;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      font-size: 0.9rem;
+    }
+
+    .sidebar li {
+      margin: 0.4rem 0;
+    }
+
+    .content {
+      flex-grow: 1;
+      padding-left: 2rem;
+    }
+
+    .content h2 {
+      color: #2c3e50;
+    }
+
+    .content a {
       color: #007acc;
       text-decoration: none;
+     }
+
+    .content a:hover {
+     text-decoration: underline;
+     }
+
+      .research-entry {
+      display: flex;
+      align-items: center;
+      margin: 1.5rem 0;
+      }
+
+      .research-entry img {
+      width: 180px;
+      height: auto;
+      border-radius: 3px;
+      margin-right: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      }
+
+      .research-entry a {
+      font-weight: bold;
+      color: #1b95d2;
+      text-decoration: none;
+      font-size: 1rem;
+      }
+
+      .research-entry a:hover {
+      text-decoration: underline;
+     }
+    
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #aaa;
+      border-top: 1px solid #ddd;
+      margin-top: 4rem;
+      padding: 1rem;
+      }
+.cv-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.cv-entry img {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.cv-text {
+  flex-grow: 1;
+}
+
+.cv-text .position {
+  display: block;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.cv-text .institution {
+  display: block;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.cv-entry .date {
+  white-space: nowrap;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+    
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        border: none;
+        padding: 0;
+      }
+      .content {
+        padding: 1rem 0 0 0;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>CV</h1>
+  <header>
+    <h1><a href="index.html">Mohammad&nbspAli&nbspBazrafshani</a></h1>
+    <nav class="nav-links">
+      <a href="cv.html" style="font-weight: bold;">CV</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="industry.html">Industry</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <img src="profile1.jpg" alt="Profile Photo">
+      <strong style="font-size: 0.93em;">Robotic&nbsp;Mechanical&nbsp;Design&nbsp;Researcher</strong>
+      <ul>
+      <li>M.Sc. in Mechanical Engineering</li>
+      <br>
+      <ul>
+        <li>📍 Iran</li>
+        <li>🏛️&nbspUniversity&nbsp;of&nbsp;Tehran</li>
+        <li>📖&nbspMechanical&nbsp;Engineering&nbsp;Faculty</li>
+        <li>🛠️&nbspCAST&nbsp<span style="font-size: 10.5px;">(Center&nbspof&nbspAdvanced&nbspSystems&nbspand&nbspTecnologies)</span></li>
+        <li>✉️ <a href="mailto:bazrafshani.ali@gamil.com">Email</a></li>
+        <li>🔗 <a href="https://www.linkedin.com/in/mohammad-ali-bazrafshani-24683bbb/">LinkedIn</a></li>
+        <!--<li>🐙 <a href="#">GitHub</a></li>-->
+        <!--<li>🎓 <a href="#">Google Scholar</a></li>-->
+        <!--<li>🧬 <a href="#">ORCID</a></li>-->
+      </ul>
+    </aside>
+
+    <main class="content">
+<h1>CV</h1>
   <p>For more information, please see my full <a href="#">CV</a>.</p>
 
   <h2>Research & Education</h2>
 
-  <div class="cv-entry">
-    <img src="images/harvard.png" alt="Harvard">
-    <div class="cv-text">
-      <span class="position">Postdoctoral Fellow</span>
-      <span class="institution">Harvard University, USA</span>
-    </div>
-    <div class="date">2024 - present</div>
+<div class="cv-entry">
+  <img src="images/test1.png" alt="Harvard">
+  <div class="cv-text">
+    <span class="position">Postdoctoral Fellow</span>
+    <span class="institution">Harvard University, USA</span>
   </div>
+  <div class="date">2024 - present</div>
+</div>
 
-  <div class="cv-entry">
-    <img src="images/imperial.png" alt="Imperial College">
-    <div class="cv-text">
-      <span class="position">PhD Student</span>
-      <span class="institution">Imperial College London, UK</span>
-    </div>
-    <div class="date">2019 - 2024</div>
+<div class="cv-entry">
+  <img src="images/test1.png" alt="Harvard" style="width: 80px;">
+  <div class="cv-text">
+    <span class="position">Postdoctoral Fellow</span><br>
+    <span class="institution">Harvard University, USA</span>
   </div>
+  <div class="date">2024 - present</div>
+</div>
 
   <div class="cv-entry">
     <img src="images/leeds.png" alt="Leeds">
@@ -169,6 +322,10 @@
     <li><strong>Early Career Committee Member</strong> of the <em>ISPO Trent International Prosthetics Symposium 2025</em></li>
     <li><strong>Winner of the Amazon Prize</strong> for Outstanding Achievement in Robotics 2023 <em>Late stage</em></li>
   </ul>
+
+  <footer>
+    © 2025 Mohammad Ali Bazrafshani – Site built with HTML/CSS – Hosted on GitHub Pages
+  </footer>
 
 </body>
 </html>
