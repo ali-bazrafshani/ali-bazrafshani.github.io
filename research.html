@@ -2,11 +2,222 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CV – Mohammad Ali Bazrafshani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1.0">
+  <title>Mohammad&nbspAli&nbspBazrafshani</title>
+  <style>
+    body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('background1.png');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+    }
+    header {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #2c3e50;
+    }
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #555;
+      transition: all 0.2s ease-in-out;
+    }
+    nav a:hover {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #007acc;
+    }
+    h1 a {
+    text-decoration: none;
+    color: inherit;
+    }
+    h1 a:hover {
+    font-weight: bold;
+    color: #007acc;
+    }
+    .nav-links {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+    }
+    
+    .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    border-radius: 8px;
+    }
+
+    .sidebar {
+      width: 250px;
+      padding-right: 2rem;
+      border-right: 1px solid #ddd;
+    }
+
+    .sidebar img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar h2 {
+      margin: 0.5rem 0;
+      white-space: normal;
+      word-break: keep-all;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      font-size: 0.9rem;
+    }
+
+    .sidebar li {
+      margin: 0.4rem 0;
+    }
+
+    .content {
+      flex-grow: 1;
+      padding-left: 2rem;
+    }
+
+    .content h2 {
+      color: #2c3e50;
+    }
+
+    .content a {
+      color: #007acc;
+      text-decoration: none;
+     }
+
+    .content a:hover {
+     text-decoration: underline;
+     }
+
+      .research-entry {
+      display: flex;
+      align-items: center;
+      margin: 1.5rem 0;
+      }
+
+      .research-entry img {
+      width: 180px;
+      height: auto;
+      border-radius: 3px;
+      margin-right: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      }
+
+      .research-entry a {
+      font-weight: bold;
+      color: #1b95d2;
+      text-decoration: none;
+      font-size: 1rem;
+      }
+
+      .research-entry a:hover {
+      text-decoration: underline;
+     }
+    
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #aaa;
+      border-top: 1px solid #ddd;
+      margin-top: 4rem;
+      padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        border: none;
+        padding: 0;
+      }
+      .content {
+        padding: 1rem 0 0 0;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>My CV</h1>
-  <p>This is my academic and professional research.</p>
+
+  <header>
+    <h1><a href="index.html">Mohammad&nbspAli&nbspBazrafshani</a></h1>
+    <nav class="nav-links">
+      <a href="cv.html">CV</a>
+      <a href="research.html" style="font-weight: bold;">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="industry.html">Industry</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <img src="profile1.jpg" alt="Profile Photo">
+      <strong style="font-size: 0.93em;">Robotic&nbsp;Mechanical&nbsp;Design&nbsp;Researcher</strong>
+      <ul>
+      <li>M.Sc. in Mechanical Engineering</li>
+      <br>
+      <ul>
+        <li>📍 Iran</li>
+        <li>🏛️&nbspUniversity&nbsp;of&nbsp;Tehran</li>
+        <li>📖&nbspMechanical&nbsp;Engineering&nbsp;Faculty</li>
+        <li>🛠️&nbspCAST&nbsp<span style="font-size: 10.5px;">(Center&nbspof&nbspAdvanced&nbspSystems&nbspand&nbspTecnologies)</span></li>
+        <li>✉️ <a href="mailto:bazrafshani.ali@gamil.com">Email</a></li>
+        <li>🔗 <a href="https://www.linkedin.com/in/mohammad-ali-bazrafshani-24683bbb/">LinkedIn</a></li>
+        <!--<li>🐙 <a href="#">GitHub</a></li>-->
+        <!--<li>🎓 <a href="#">Google Scholar</a></li>-->
+        <!--<li>🧬 <a href="#">ORCID</a></li>-->
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h2>About me...</h2>
+      <br>
+      <p>
+        I am a researcher in robotics with a strong background in mechanical design, soft actuation, and aerial platforms. My current work focuses on combining nature-inspired design and learning-based control methods.
+      </p>
+          <div class="research-entry">
+          <img src="profile.jpg" alt="Gripper Design" />
+          <a href="#">Terminal Device and Gripper Design</a>
+          </div>
+      <p>
+        I completed my Master's in Mechanical Engineering at the University of Tehran and have contributed to several UAV and SAM system development projects. My goal is to build the next generation of adaptive, soft, and intelligent robots.
+      </p>
+       <br>
+      <p>
+        My research interests include <strong>robotic manipulation</strong>, <strong>soft robotics</strong>, and <strong>bio-inspired UAVs</strong>. Outside the lab, I enjoy hiking, photography, and playing Othello.
+      </p>
+        <br>
+      <p>
+        Feel free to reach out if you're interested in my work.
+      </p>
+    </main>
+  </div>
+
+  <footer>
+    © 2025 Mohammad Ali Bazrafshani – Site built with HTML/CSS – Hosted on GitHub Pages
+  </footer>
+
 </body>
 </html>
