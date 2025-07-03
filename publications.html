@@ -2,11 +2,159 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CV – Mohammad Ali Bazrafshani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications – Mohammad Ali Bazrafshani</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 a {
+      text-decoration: none;
+      color: #2c3e50;
+    }
+
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #555;
+      transition: all 0.2s ease-in-out;
+    }
+
+    nav a:hover {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #007acc;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-top: 2rem;
+    }
+
+    .year {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .pub-title {
+      color: #1b95d2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .pub-title:hover {
+      text-decoration: underline;
+    }
+
+    .pub-authors {
+      margin: 0.2rem 0;
+    }
+
+    .pub-journal {
+      font-style: italic;
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .pub-links a {
+      margin-right: 10px;
+      font-size: 0.9rem;
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    .pub-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-top: 4rem;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>My CV</h1>
-  <p>This is my academic and professional Publication.</p>
+
+  <header>
+    <h1><a href="index.html">Mohammad Ali Bazrafshani</a></h1>
+    <nav>
+      <a href="cv.html">CV</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html" style="font-weight: bold;">Publications</a>
+      <a href="industry.html">Industry</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Publications</h2>
+    <p>You can find a full list of my publications on my <a href="#">Google Scholar</a>.</p>
+
+    <div class="year">2025</div>
+
+    <div class="pub">
+      <a href="#" class="pub-title">Examining the physical and psychological effects of combining multimodal feedback with continuous control in prosthetic hands</a>
+      <div class="pub-authors"><strong>Digby Chappell</strong>, Zeyu Yang, Angus B Clark, Alexandre Berkovic, Colin Laganier, Weston Baxter, Fernando Bello, Petar Kormushev, and Nicolas Rojas.</div>
+      <div class="pub-journal">Scientific Reports. <strong>2025</strong>.</div>
+      <div class="pub-links">
+        <a href="#">Paper</a> | <a href="#">Video</a>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="pub">
+      <a href="#" class="pub-title">Beyond Humanoid Prosthetic Hands: Modular Terminal Devices That Improve User Performance</a>
+      <div class="pub-authors"><strong>Digby Chappell</strong>, Barry Mulvey, Shehara Perera, Fernando Bello, Petar Kormushev, and Nicolas Rojas.</div>
+      <div class="pub-journal">IEEE Transactions on Neural Systems and Rehabilitation Engineering. <strong>2025</strong>.</div>
+      <div class="pub-links">
+        <a href="#">Paper</a> | <a href="#">Video</a>
+      </div>
+    </div>
+
+    <div class="year">2024</div>
+
+    <div class="pub">
+      <a href="#" class="pub-title">When and where to step: Terrain-aware real-time footstep location and timing optimization for bipedal robots</a>
+      <div class="pub-authors">Ke Wang, Zhaoyang Jacopo Hu, Peter Tsinikar, Oskar Helander, <strong>Digby Chappell</strong>, and Petar Kormushev.</div>
+      <div class="pub-journal">Robotics and Autonomous Systems (RAS). <strong>2024</strong>.</div>
+      <div class="pub-links">
+        <a href="#">Paper</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Mohammad Ali Bazrafshani – Site built with HTML/CSS – Hosted on GitHub Pages
+  </footer>
+
 </body>
 </html>
