@@ -144,58 +144,6 @@
       padding: 1rem;
     }
 
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    }
-
-    h2 {
-      color: #2c3e50;
-      margin-top: 2rem;
-    }
-
-    .year {
-      font-weight: bold;
-      font-size: 1.1rem;
-      margin-top: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .pub-title {
-      color: #1b95d2;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .pub-title:hover {
-      text-decoration: underline;
-    }
-
-    .pub-authors {
-      margin: 0.2rem 0;
-    }
-
-    .pub-journal {
-      font-style: italic;
-      font-size: 0.9rem;
-      margin-bottom: 0.3rem;
-    }
-
-    .pub-links a {
-      margin-right: 10px;
-      font-size: 0.9rem;
-      color: #007acc;
-      text-decoration: none;
-    }
-
-    .pub-links a:hover {
-      text-decoration: underline;
-    }
-    
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
@@ -218,7 +166,7 @@
     <nav class="nav-links">
       <a href="cv.html">CV</a>
       <a href="research.html">Research</a>
-      <a href="publications.html" style="font-weight: bold;">Publications</a>
+      <a href="publications.html">Publications</a>
       <a href="industry.html">Industry</a>
     </nav>
   </header>
@@ -244,42 +192,50 @@
     </aside>
 
     <main class="content">
-     <h2>Publications</h2>
-    <p>You can find a full list of my publications on my <a href="#">Google Scholar</a>.</p>
+  <h1>Research</h1>
 
-    <div class="year">2025</div>
+  <h2>Terminal Device and Gripper Design</h2>
+  <h3><strong>Non-Humanoid Prosthetic End Effectors</strong></h3>
 
-    <div class="pub">
-      <a href="#" class="pub-title">Examining the physical and psychological effects of combining multimodal feedback with continuous control in prosthetic hands</a>
-      <div class="pub-authors"><strong>Digby Chappell</strong>, Zeyu Yang, Angus B Clark, Alexandre Berkovic, Colin Laganier, Weston Baxter, Fernando Bello, Petar Kormushev, and Nicolas Rojas.</div>
-      <div class="pub-journal">Scientific Reports. <strong>2025</strong>.</div>
-      <div class="pub-links">
+  <div class="research-block">
+    <img src="images/gripper1.png" alt="Gripper Image">
+    <div class="research-text">
+      <a href="#">Beyond Humanoid Prosthetic Hands: Modular Terminal Devices That Improve User Performance</a>
+      <div class="citation">
+        <strong>Digby Chappell</strong>, Barry Mulvey, Shehara Perera, Fernando Bello, Petar Kormushev, and Nicolas Rojas.<br>
+        <em>IEEE Transactions on Neural Systems and Rehabilitation Engineering</em>. <strong>2025</strong>.
+      </div>
+      <div class="links">
         <a href="#">Paper</a> | <a href="#">Video</a>
       </div>
     </div>
+  </div>
 
-    <br>
+  <p>
+    Despite decades of research and development, myoelectric prosthetic hands lack functionality and are often rejected by users. This lack in functionality can be partially attributed to the widely accepted anthropomorphic design ideology in the field; attempting to replicate human hand form and function despite severe limitations in control and sensing technology. 
+    Instead, prosthetic hands can be tailored to perform specific tasks without increasing complexity by shedding the constraints of anthropomorphism. In this paper, we develop and evaluate four open-source modular non-humanoid devices to perform the motion required to replicate human flicking motion and to twist a screwdriver, and the functionality required to pick and place flat objects and to cut paper. Experimental results from these devices demonstrate that, versus a humanoid prosthesis, non-humanoid prosthesis design dramatically improves task performance, reduces user compensatory movement, and reduces task load. Case studies with two end users demonstrate the translational benefits of this research. We found that special attention should be paid to monitoring end-user task load to ensure positive rehabilitation outcomes.
+  </p>
 
-    <div class="pub">
-      <a href="#" class="pub-title">Beyond Humanoid Prosthetic Hands: Modular Terminal Devices That Improve User Performance</a>
-      <div class="pub-authors"><strong>Digby Chappell</strong>, Barry Mulvey, Shehara Perera, Fernando Bello, Petar Kormushev, and Nicolas Rojas.</div>
-      <div class="pub-journal">IEEE Transactions on Neural Systems and Rehabilitation Engineering. <strong>2025</strong>.</div>
-      <div class="pub-links">
+  <h2>The Hydra Hand</h2>
+
+  <div class="research-block">
+    <img src="images/hydra.png" alt="Hydra Hand Image">
+    <div class="research-text">
+      <a href="#">The Hydra Hand: A Mode-Switching Underactuated Gripper with Precision and Power Grasping Modes</a>
+      <div class="citation">
+        <strong>Digby Chappell</strong>, Fernando Bello, Petar Kormushev, and Nicolas Rojas.<br>
+        <em>IEEE Robotics and Automation Letters (RA-L)</em>, presented at <strong>ICRA 2023</strong>.
+      </div>
+      <div class="links">
         <a href="#">Paper</a> | <a href="#">Video</a>
       </div>
     </div>
+  </div>
 
-    <div class="year">2024</div>
-
-    <div class="pub">
-      <a href="#" class="pub-title">When and where to step: Terrain-aware real-time footstep location and timing optimization for bipedal robots</a>
-      <div class="pub-authors">Ke Wang, Zhaoyang Jacopo Hu, Peter Tsinikar, Oskar Helander, <strong>Digby Chappell</strong>, and Petar Kormushev.</div>
-      <div class="pub-journal">Robotics and Autonomous Systems (RAS). <strong>2024</strong>.</div>
-      <div class="pub-links">
-        <a href="#">Paper</a>
-      </div>
-    </div>
-
+  <p>
+    Human hands are able to grasp a wide range of object sizes, shapes, and weights, achieved via reshaping and altering their apparent grasping stiffness between compliant power and rigid precision. Achieving similar versatility in robotic hands remains a challenge, which has often been addressed by adding extra controllable degrees of freedom, tactile sensors, or specialised extra grasping hardware, at the cost of control complexity and robustness. We introduce a novel reconfigurable four-fingered two-actuator underactuated gripper – the Hydra Hand – that switches between compliant power and rigid precision grasps using a single motor, while generating those grasps via a single hydromechanical actuator – exhibiting adaptive simplicity and high versatility.
+      </p>
+    </main>
   </div>
 
   <footer>
