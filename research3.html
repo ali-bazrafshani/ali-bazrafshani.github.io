@@ -9,7 +9,7 @@
   overflow-x: hidden;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('images/index_background.jpg');
+  background-image: url('images/Background/industry_background1.png');
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@
       align-items: center;
     }
     header h1 {
-      font-size: 20px;
+      font-size: 15px;
       margin: 0;
       color: #2c3e50;
     }
@@ -52,6 +52,10 @@
     margin-left: auto;
     display: flex;
     gap: 15px;
+
+    font-weight: 500;
+    font-size: 14.5px;
+    line-height: 1.5;
     }
     
     .container {
@@ -61,6 +65,10 @@
     margin: 2rem auto;
     padding: 0 2rem;
     border-radius: 8px;
+      
+    font-weight: 500;
+    font-size: 14.5px;
+    line-height: 1.5;
     }
 
     .sidebar {
@@ -152,7 +160,7 @@
     }
 
     .research-block img {
-      width: 250px;
+      width: 430px;
       height: auto;
       border-radius: 4px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -164,9 +172,9 @@
     }
 
     .citation {
-      font-size: 0.9rem;
+      font-size: 12.5px;
       margin-top: 0.3rem;
-      color: #444;
+      color: #808080;
     }
 
     .links {
@@ -174,10 +182,14 @@
       margin-top: 0.3rem;
     }
 
-    p {
-      line-height: 1.6;
-      margin-top: 1rem;
-    }
+
+
+          .content p {
+      font-weight: 500;
+      font-size: 14.5px;
+      line-height: 1.5;
+      }
+    
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
@@ -199,9 +211,9 @@
     <h1><a href="index.html">Mohammad&nbspAli&nbspBazrafshani</a></h1>
     <nav class="nav-links">
       <a href="cv.html">CV</a>
-      <a href="research.html">Research</a>
+      <a href="research.html" style="font-weight: bold; font-size: 16px; color: #aab7b8;">Research</a>
       <a href="publications.html">Publications</a>
-      <a href="industry.html" style="font-weight: bold;">Industry</a>
+      <a href="industry.html">Industry</a>
     </nav>
   </header>
 
@@ -216,7 +228,7 @@
         <li>📍 Iran</li>
         <li>🏛️&nbspUniversity&nbsp;of&nbsp;Tehran</li>
         <li>📖&nbspMechanical&nbsp;Engineering&nbsp;Faculty</li>
-        <li>🛠️&nbspCAST&nbsp<span style="font-size: 10.5px;">(Center&nbspof&nbspAdvanced&nbspSystems&nbspand&nbspTecnologies)</span></li>
+        <li>🛠️&nbspCAST&nbsp<span style="font-size: 10px;">(Center&nbspof&nbspAdvanced&nbspSystems&nbspand&nbspTechnologies)</span></li>
         <li>✉️ <a href="mailto:bazrafshani.ali@gamil.com">Email</a></li>
         <li>🔗 <a href="https://www.linkedin.com/in/mohammad-ali-bazrafshani-24683bbb/">LinkedIn</a></li>
         <!--<li>🐙 <a href="#">GitHub</a></li>-->
@@ -226,52 +238,94 @@
     </aside>
 
     <main class="content">
-  <h1>Industry</h1>
-
-  <p>Despite decades of research and development, myoelectric prosthetic hands lack functionality and are often rejected by users. This lack in functionality can be partially attributed to the widely accepted anthropomorphic design ideology in the field; attempting to replicate human hand form and function despite severe limitations in control and sensing technology. 
-    Instead, pro</p>
-      <br>
-      <br>
-  <h2>Non-Humanoid Prosthetic End Effectors</h2>
-
-  <div class="research-block">
-    <img src="images/logo/Same_logo.png" alt="Gripper Image">
-    <div class="research-text">
-      <a href="#">Beyond Humanoid Prosthetic Hands: Modular Terminal Devices That Improve User Performance</a>
-      <div class="citation">
-        <strong>Digby Chappell</strong>, Barry Mulvey, Shehara Perera, Fernando Bello, Petar Kormushev, and Nicolas Rojas.<br>
-        <em>IEEE Transactions on Neural Systems and Rehabilitation Engineering</em>. <strong>2025</strong>.
-      </div>
-      <div class="links">
-        <a href="#">Paper</a> | <a href="#">Video</a>
-      </div>
-    </div>
-  </div>
-
-  <p>
-    Despite decades of research and development, myoelectric prosthetic hands lack functionality and are often rejected by users. This lack in functionality can be partially attributed to the widely accepted anthropomorphic design ideology in the field; attempting to replicate human hand form and function despite severe limitations in control and sensing technology. 
-    Instead, prosthetic hands can be tailored to perform specific tasks without increasing complexity by shedding the constraints of anthropomorphism. In this paper, we develop and evaluate four open-source modular non-humanoid devices to perform the motion required to replicate human flicking motion and to twist a screwdriver, and the functionality required to pick and place flat objects and to cut paper. Experimental results from these devices demonstrate that, versus a humanoid prosthesis, non-humanoid prosthesis design dramatically improves task performance, reduces user compensatory movement, and reduces task load. Case studies with two end users demonstrate the translational benefits of this research. We found that special attention should be paid to monitoring end-user task load to ensure positive rehabilitation outcomes.
-  </p>
-
-  <h2>The Hydra Hand</h2>
-
-  <div class="research-block">
-    <img src="images/hydra.png" alt="Hydra Hand Image">
-    <div class="research-text">
-      <a href="#">The Hydra Hand: A Mode-Switching Underactuated Gripper with Precision and Power Grasping Modes</a>
-      <div class="citation">
-        <strong>Digby Chappell</strong>, Fernando Bello, Petar Kormushev, and Nicolas Rojas.<br>
-        <em>IEEE Robotics and Automation Letters (RA-L)</em>, presented at <strong>ICRA 2023</strong>.
-      </div>
-      <div class="links">
-        <a href="#">Paper</a> | <a href="#">Video</a>
-      </div>
-    </div>
-  </div>
-
-  <p>
-    Human hands are able to grasp a wide range of object sizes, shapes, and weights, achieved via reshaping and altering their apparent grasping stiffness between compliant power and rigid precision. Achieving similar versatility in robotic hands remains a challenge, which has often been addressed by adding extra controllable degrees of freedom, tactile sensors, or specialised extra grasping hardware, at the cost of control complexity and robustness. We introduce a novel reconfigurable four-fingered two-actuator underactuated gripper – the Hydra Hand – that switches between compliant power and rigid precision grasps using a single motor, while generating those grasps via a single hydromechanical actuator – exhibiting adaptive simplicity and high versatility.
+  <h1>Humanoid Robots Mechanical Design</h1>
+    <br>
+        <p>
+        🎬 <span style="font-weight: bold; font-size: 1.1em; text-decoration: underline;"> <a href="https://www.youtube.com/watch?v=iJFCy04vZkg&authuser=0">Video: <span style="font-size: 0.8em;">Smart joint proposal.</span></a>
+        </p>
+        <p>
+        📝 <span style="font-weight: bold; font-size: 1.1em; text-decoration: underline;"> <a href=#"> Paper: <span style="font-size: 0.8em;">The manuscript based on this research is currently under preparation.</span></a>
       </p>
+      <br>
+      <p>
+        Based on the experiences from "Surena III", the "Sorena IV" project began. It was decided to refine the mechanical design as far as possible, so we created a general plan for designing the robot. The mechanical design of the robot was divided into several parts. One: actuators, two: legs and ankle mechanism, three: hip and its mechanisms, four: chest and placement of its components, five: shoulder to hand, six: head and shell of the robot. Each of these sections had an appropriate approach and methodology of its own. For example, in head design, the main constraint was about appearance, so mechanical issues were in the second step so that the design process started with the industrial and artistic design team and proceeded with the collaboration of the mechanical design team.
+      </p>
+  <div class="research-block">
+    <img src="images/research/research3 p_1.jpg" alt="research3-pic1">
+    <div class="research-text">
+      <div class="citation">
+        <strong>Smart join idea from design to prototype.</strong>
+        <br><br>
+        I. Smart joint detailed mechanical design.
+        <br>
+        II. A functional prototype was developed and tested to evaluate the concept.
+        <br>
+      </div>
+    </div>
+  </div>
+    <p>
+        I attended the project "Sourena IV" as a member of the design and manufacturing team. In this project, coordination was needed between the other sections to complete the project. For example, constraints related to location of some electronic parts, boards and circuits, wirings, and location of batteries and power system was in coordination with the electronic team, placement of IMUs and mechanisms and actuators conditions was in coordination with the dynamics and control team, location of cameras and audio sensors was in coordination With the software team and taking into account overall constraints of design and appearance was in coordination with the artistic and industrial design team.
+    </p>
+      <div class="research-block">
+    <img src="images/research/research3 p_2.jpg" alt="research3-pic2">
+    <div class="research-text">
+      <div class="citation">
+        <strong>Precise control of serial multi-joint mechanisms has a wide range of applications in robotics.</strong>
+        <br><br>
+        I. Robotic prosthetic.
+        <br>
+        II. Robotic hand fingers.
+        <br>
+        III. Continuum robots.
+        <br>
+        IV. Robotic grippers.
+        <br>
+      </div>
+    </div>
+  </div>
+      <p>
+     Due to the fact that mechanical constraints and structural strength issues were one of the most important elements in the robot structure, coordination between our team and other teams was carried out back and forth, and in each phase of the project information between the teams were updated. Location of ports needed to connect the robot to the outside, main switches, shell connections, and at the same time, Constant consideration of the weight of the robot were some of the challenges that despite the simplicity of them, brought me a lot of valuable experiences. The advantages of teamwork and interaction with other project groups, time management, resources management, interaction with external suppliers were some of the most important experiences that I accumulated during this project. Apart from the design of the legs that I acted as the design consultant, I had a direct role in the design process of rest of the parts, which were very large and complicated, it made me skillful. All parts of the project were being designed at the highest level of innovation and creativity, while we always looked at past experiences, "Surena III", and resources management. The robot’s total weight was one of the issues that I invented a new way to minimize it. In this method, an online excel file with weights of all robot components was provided to all teams, which was regularly updated. Also, several meetings To minimize them were held continuously.
+      </p>
+      <div class="research-block">
+    <img src="images/research/research3 p_3.jpg" alt="research3-pic3">
+    <div class="research-text">
+      <div class="citation">
+        <strong>Conventional approaches in serious multi-joint mechanisms.</strong>
+        <br><br>
+        I. Soft robots approach.
+        <br>
+        II. Lever mechanism approach.
+        <br>
+        III. Actuator in joint approach.
+        <br>
+        IV. Tendon-driven approach.
+      </div>
+    </div>
+  </div>
+    <p>
+        One of the most challenging design processes of the humanoid robot is the hip mechanism design. There are three points here. First: hip must present a good performance, Second: it needs sufficient workspace and Third: it should have the highest degree of similarity to a human posture not a rough industrial mechanisms. So, in the "Sourna IV" project it was decided to redesign and modify the mechanism of the hip. Hip Roll and Hip Yaw actuators use a link to transmit their torque to their joints. Using the links allows us to move actuator out of the joint, but at the same time create much more complexity for the mechanism. In humans hip three axis have an intersection at one point. Trying to simulate and design this action was my challenge at this stage. Moreover, the length of the legs are about one meter which cause considerable bending torque in joint positions. Designing a mechanism to manage all of these problems and also minimize the size and the structure deflection in an innovative way was my goal. After concept design, using topology optimization method, initial design was started based on the constraints of the structure , including the amount of angles required for each joint, started. Ultimately, the final design was achieved by carrying out simultaneous analysis. The use of links in limited and small spaces for mechanisms, their assemblies and the consideration of manufacturing processes are some of the success in this design.
+    </p>
+             <div class="research-block">
+    <img src="images/research/research3 p_4.jpg" alt="research3-pic4">
+    <div class="research-text">
+      <div class="citation">
+        <strong>Smart join main concept.</strong>
+        <br><br>
+        I. The robotic finger used as a case study includes three joints and two tendons responsible for flexion and extension.
+        <br>
+        II. In the first configuration, the green joint is set to low rotational stiffness, while the other two (red) joints maintain high stiffness.
+        <br>
+        III. Under these conditions, only the green joint responds to the actuation force, enabling controlled, sequential motion. By dynamically reassigning stiffness, the system can selectively activate different joints as needed.
+        <br>
+      </div>
+    </div>
+  </div>
+      <p>
+      Pelvis (Hip) structure in humanoid robots is a junction between legs and body trunk and one of the most critical parts in the structure. In the previous version of "Sourna", "Sourena III", this part of the structure had many technical challenges like a deflection. Design of the hip structure was a mixture of previous efforts and experiences and new creative ideas. The main method was to put basic components and mechanisms together to use "topology optimization" method for optimization. For this purpose, two softwares were used. First: "Inspire-solidThinking", second: "Siemens NX" software to validate the results of "Inspire-solidThinking" software in the previous step as well as to find other possible solutions based on our assumptions. with the release of "Topology Optimization" Plugin in "SolidWorks", all previous steps were checked again. The final output was not manufacturable so the structure revised with respect to manufacturing methods. After all the steps mentioned, it was necessary to analyze the component in terms of loads. This iterative procedure happened many times in order to get the optimum structure design. The final weight of the structure was 1.3 kg using the 7075-T6 aluminum alloy which was an acceptable amount for this fateful component.
+      </p>
+      <br>
+      <br>
+        <p>Back to <span style=" text-decoration: underline; color: #297ecc;"><a href="https://ali-bazrafshani.github.io/index.html">HomePage</a></span>.</p>
     </main>
   </div>
 
