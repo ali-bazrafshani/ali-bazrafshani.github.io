@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
   overflow-x: hidden;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('images/index_background.jpg');
+  background-image: url('images/Background/industry_background1.png');
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -25,7 +26,7 @@
       align-items: center;
     }
     header h1 {
-      font-size: 20px;
+      font-size: 15px;
       margin: 0;
       color: #2c3e50;
     }
@@ -52,6 +53,10 @@
     margin-left: auto;
     display: flex;
     gap: 15px;
+
+    font-weight: 500;
+    font-size: 14.5px;
+    line-height: 1.5;
     }
     
     .container {
@@ -61,6 +66,10 @@
     margin: 2rem auto;
     padding: 0 2rem;
     border-radius: 8px;
+      
+    font-weight: 500;
+    font-size: 14.5px;
+    line-height: 1.5;
     }
 
     .sidebar {
@@ -152,7 +161,7 @@
     }
 
     .research-block img {
-      width: 250px;
+      width: 430px;
       height: auto;
       border-radius: 4px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -164,9 +173,9 @@
     }
 
     .citation {
-      font-size: 0.9rem;
+      font-size: 12.5px;
       margin-top: 0.3rem;
-      color: #444;
+      color: #808080;
     }
 
     .links {
@@ -174,10 +183,14 @@
       margin-top: 0.3rem;
     }
 
-    p {
-      line-height: 1.6;
-      margin-top: 1rem;
-    }
+
+
+          .content p {
+      font-weight: 500;
+      font-size: 14.5px;
+      line-height: 1.5;
+      }
+    
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
@@ -199,9 +212,9 @@
     <h1><a href="index.html">Mohammad&nbspAli&nbspBazrafshani</a></h1>
     <nav class="nav-links">
       <a href="cv.html">CV</a>
-      <a href="research.html">Research</a>
+      <a href="research.html" style="font-weight: bold; font-size: 16px; color: #aab7b8;">Research</a>
       <a href="publications.html">Publications</a>
-      <a href="industry.html" style="font-weight: bold;">Industry</a>
+      <a href="industry.html">Industry</a>
     </nav>
   </header>
 
@@ -216,7 +229,7 @@
         <li>📍 Iran</li>
         <li>🏛️&nbspUniversity&nbsp;of&nbsp;Tehran</li>
         <li>📖&nbspMechanical&nbsp;Engineering&nbsp;Faculty</li>
-        <li>🛠️&nbspCAST&nbsp<span style="font-size: 10.5px;">(Center&nbspof&nbspAdvanced&nbspSystems&nbspand&nbspTecnologies)</span></li>
+        <li>🛠️&nbspCAST&nbsp<span style="font-size: 10px;">(Center&nbspof&nbspAdvanced&nbspSystems&nbspand&nbspTechnologies)</span></li>
         <li>✉️ <a href="mailto:bazrafshani.ali@gamil.com">Email</a></li>
         <li>🔗 <a href="https://www.linkedin.com/in/mohammad-ali-bazrafshani-24683bbb/">LinkedIn</a></li>
         <!--<li>🐙 <a href="#">GitHub</a></li>-->
@@ -226,52 +239,97 @@
     </aside>
 
     <main class="content">
-  <h1>Industry</h1>
-
-  <p>Despite decades of research and development, myoelectric prosthetic hands lack functionality and are often rejected by users. This lack in functionality can be partially attributed to the widely accepted anthropomorphic design ideology in the field; attempting to replicate human hand form and function despite severe limitations in control and sensing technology. 
-    Instead, pro</p>
-      <br>
-      <br>
-  <h2>Non-Humanoid Prosthetic End Effectors</h2>
-
-  <div class="research-block">
-    <img src="images/logo/Same_logo.png" alt="Gripper Image">
-    <div class="research-text">
-      <a href="#">Beyond Humanoid Prosthetic Hands: Modular Terminal Devices That Improve User Performance</a>
-      <div class="citation">
-        <strong>Digby Chappell</strong>, Barry Mulvey, Shehara Perera, Fernando Bello, Petar Kormushev, and Nicolas Rojas.<br>
-        <em>IEEE Transactions on Neural Systems and Rehabilitation Engineering</em>. <strong>2025</strong>.
-      </div>
-      <div class="links">
-        <a href="#">Paper</a> | <a href="#">Video</a>
-      </div>
-    </div>
-  </div>
-
-  <p>
-    Despite decades of research and development, myoelectric prosthetic hands lack functionality and are often rejected by users. This lack in functionality can be partially attributed to the widely accepted anthropomorphic design ideology in the field; attempting to replicate human hand form and function despite severe limitations in control and sensing technology. 
-    Instead, prosthetic hands can be tailored to perform specific tasks without increasing complexity by shedding the constraints of anthropomorphism. In this paper, we develop and evaluate four open-source modular non-humanoid devices to perform the motion required to replicate human flicking motion and to twist a screwdriver, and the functionality required to pick and place flat objects and to cut paper. Experimental results from these devices demonstrate that, versus a humanoid prosthesis, non-humanoid prosthesis design dramatically improves task performance, reduces user compensatory movement, and reduces task load. Case studies with two end users demonstrate the translational benefits of this research. We found that special attention should be paid to monitoring end-user task load to ensure positive rehabilitation outcomes.
-  </p>
-
-  <h2>The Hydra Hand</h2>
-
-  <div class="research-block">
-    <img src="images/hydra.png" alt="Hydra Hand Image">
-    <div class="research-text">
-      <a href="#">The Hydra Hand: A Mode-Switching Underactuated Gripper with Precision and Power Grasping Modes</a>
-      <div class="citation">
-        <strong>Digby Chappell</strong>, Fernando Bello, Petar Kormushev, and Nicolas Rojas.<br>
-        <em>IEEE Robotics and Automation Letters (RA-L)</em>, presented at <strong>ICRA 2023</strong>.
-      </div>
-      <div class="links">
-        <a href="#">Paper</a> | <a href="#">Video</a>
-      </div>
-    </div>
-  </div>
-
-  <p>
-    Human hands are able to grasp a wide range of object sizes, shapes, and weights, achieved via reshaping and altering their apparent grasping stiffness between compliant power and rigid precision. Achieving similar versatility in robotic hands remains a challenge, which has often been addressed by adding extra controllable degrees of freedom, tactile sensors, or specialised extra grasping hardware, at the cost of control complexity and robustness. We introduce a novel reconfigurable four-fingered two-actuator underactuated gripper – the Hydra Hand – that switches between compliant power and rigid precision grasps using a single motor, while generating those grasps via a single hydromechanical actuator – exhibiting adaptive simplicity and high versatility.
+  <h1>Robotic Hand and Gripper Mechanical Design</h1>
+    <br>
+        <p>
+        🎬 <span style="font-weight: bold; font-size: 1.1em; text-decoration: underline;"> <a href="https://www.youtube.com/watch?v=iJFCy04vZkg&authuser=0">Video: <span style="font-size: 0.8em;">Smart joint proposal.</span></a>
+        </p>
+        <p>
+        📝 <span style="font-weight: bold; font-size: 1.1em; text-decoration: underline;"> <a href=#"> Paper: <span style="font-size: 0.8em;">The manuscript based on this research is currently under preparation.</span></a>
       </p>
+      <br>
+      <p>
+        Based on previous studies and my experience in robotic mechanical design, I observed the lack of an effective method for balancing force, torque, and controllability in serial multi-joint mechanisms (such as robotic fingers and continuum robots). To address this challenge and enhance dexterity while maintaining sufficient force within the mechanism, I proposed the Smart Joint method.
+    </p>
+  <div class="research-block">
+    <img src="images/research/research p_1.png" alt="research-pic1">
+    <div class="research-text">
+      <div class="citation">
+        <strong>Smart join idea from design to prototype.</strong>
+        <br><br>
+        I. Smart joint detailed mechanical design.
+        <br>
+        II. A functional prototype was developed and tested to evaluate the concept.
+        <br>
+      </div>
+    </div>
+  </div>
+    <p>
+     If we exclude the field of soft robotics, serial multi-joint mechanisms remain among the most widely used structures in robotics, particularly in high-precision applications. Achieving precise motion at the end-effector, along with accurate control of each individual joint, can significantly enhance the overall performance and functionality of these mechanisms.
+   </p>
+        <div class="research-block">
+    <img src="images/research/research p_2.png" alt="research-pic2">
+    <div class="research-text">
+      <div class="citation">
+        <strong>Precise control of serial multi-joint mechanisms has a wide range of applications in robotics.</strong>
+        <br><br>
+        I. Robotic prosthetic.
+        <br>
+        II. Robotic hand fingers.
+        <br>
+        III. Continuum robots.
+        <br>
+        IV. Robotic grippers.
+        <br>
+      </div>
+    </div>
+  </div>
+      <p>
+     In conventional approaches, if the torque-generating actuator is placed directly inside each joint (e.g., in finger joints), the mechanism must be relatively large, and due to limited space, the actuator typically produces insufficient torque. On the other hand, if the torque source is located remotely (e.g., in the palm or forearm instead of inside the finger), then precise control of a serial multi-joint mechanism either requires a large number of tendons or linkages or forces a compromise in controllability by reducing the degrees of independent motion.
+       <div class="research-block">
+    <img src="images/research/research p_3.png" alt="research-pic3">
+    <div class="research-text">
+      <div class="citation">
+        <strong>Conventional approaches in serious multi-joint mechanisms.</strong>
+        <br><br>
+        I. Soft robots approach.
+        <br>
+        II. Lever mechanism approach.
+        <br>
+        III. Actuator in joint approach.
+        <br>
+        IV. Tendon-driven approach.
+      </div>
+    </div>
+  </div>
+    <p>
+        The Smart Joint method offers a novel alternative. In this approach, a single actuator per rotational plane is used to drive the farthest link in a serial robotic mechanism (like a finger) via a tendon-driven system capable of flexion and extension. The key idea is that if we can actively control the rotational stiffness of each joint, we can determine which joint moves and when.
+        By increasing the stiffness of all joints and selectively reducing it in the target joint, only that joint will move in response to the tendon actuation. After completing the movement, the stiffness distribution can be reconfigured to target the next joint. Coordinated motion of multiple joints is also possible if desired.
+        The Smart Joint approach provides a highly efficient, low-energy, compact, cost-effective, and commercially viable solution with fast response times and considerable joint stiffness.
+    </p>
+             <div class="research-block">
+    <img src="images/research/research p_4.png" alt="research-pic4">
+    <div class="research-text">
+      <div class="citation">
+        <strong>Smart join main concept.</strong>
+        <br><br>
+        I. The robotic finger used as a case study includes three joints and two tendons responsible for flexion and extension.
+        <br>
+        II. In the first configuration, the green joint is set to low rotational stiffness, while the other two (red) joints maintain high stiffness.
+        <br>
+        III. Under these conditions, only the green joint responds to the actuation force, enabling controlled, sequential motion. By dynamically reassigning stiffness, the system can selectively activate different joints as needed.
+        <br>
+      </div>
+    </div>
+  </div>
+      <p>
+      Mechanically, the Smart Joint is implemented by integrating a rotational locking mechanism into the joint. This mechanism consists of two coaxial cylinders, one inside the other, with defined surface roughness. A working fluid is placed between these surfaces. At room temperature (the system's operating temperature), the working fluid exists as solid crystals that, when melted and cured in contact with the rough surfaces, form a strong intermolecular bond that greatly increases the joint's rotational stiffness, effectively locking it.
+      When the controller decides to unlock the joint, thermal energy is applied to the working fluid, triggering a phase change to liquid. This weakens the bond between the cylinders, allowing the joint to rotate. The external tendon drive mechanism can then actuate the joint. Once movement is complete, the system removes the thermal energy, causing the fluid to re-solidify and restore stiffness.
+      My master's thesis introduced this concept and implemented it in a prototype joint.  
+      </p>
+      <br>
+      <br>
+        <p>Back to <span style=" text-decoration: underline; color: #297ecc;"><a href="https://ali-bazrafshani.github.io/index.html">HomePage</a></span>.</p>
     </main>
   </div>
 
