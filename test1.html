@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تایم‌لاین</title>
+  <title>تایم‌لاین افقی</title>
   <style>
     body {
       margin: 0;
@@ -12,22 +12,34 @@
       direction: rtl;
     }
 
-    .timeline {
+    .header {
+      text-align: center;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .timeline-container {
       display: flex;
+      flex-wrap: wrap;
       max-width: 1200px;
       margin: auto;
-      min-height: 100vh;
+      align-items: flex-start;
+      padding: 20px;
     }
 
-    /* ستون سمت چپ (دایره‌ها + خط) */
-    .left {
-      flex: 1;
+    /* ستون دایره‌ها */
+    .circles {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+      flex: 0 0 20%;
+      padding-right: 20px;
       position: relative;
-      background: #fff;
-      padding: 40px 20px;
     }
 
-    .line {
+    .circle-line {
       position: absolute;
       left: 50%;
       top: 0;
@@ -35,22 +47,21 @@
       width: 2px;
       background: #ddd;
       transform: translateX(-50%);
+      z-index: 1;
     }
 
     .circle {
       position: relative;
-      margin: 60px auto;
-      width: 70px;
-      height: 70px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
-      background: #aaa;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
       font-weight: bold;
-      font-size: 14px;
       z-index: 2;
+      font-size: 14px;
     }
 
     .y1998 { background: #e53935; }
@@ -60,32 +71,29 @@
     .y2013 { background: #1e88e5; }
     .y2017 { background: #d81b60; }
 
-    /* ستون سمت راست */
-    .right {
-      width: 35%;
-      background: #333;
-      color: #fff;
-      padding: 30px 20px;
+    /* ستون توضیحات */
+    .boxes {
+      flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      gap: 20px;
     }
 
     .box {
-      background: #444;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 4px;
-      font-size: 14px;
+      background: #333;
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 5px;
       position: relative;
+      min-width: 200px;
     }
 
     .box::before {
       content: "";
       position: absolute;
       left: -10px;
-      top: 15px;
-      width: 6px;
+      top: 0;
+      width: 10px;
       height: 100%;
       border-radius: 3px;
     }
@@ -97,42 +105,22 @@
     .blue::before { background: #1e88e5; }
     .pink::before { background: #d81b60; }
 
-    /* عنوان */
-    .header {
-      text-align: center;
-      padding: 20px;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    /* واکنش‌گرایی برای موبایل */
+    /* واکنش‌گرایی موبایل */
     @media (max-width: 768px) {
-      .timeline {
+      .timeline-container {
         flex-direction: column;
-        padding: 0 10px;
       }
-      .right {
+      .circles {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin-bottom: 20px;
+      }
+      .circle-line {
+        display: none;
+      }
+      .boxes {
         width: 100%;
-        order: -1;
-        padding: 20px 10px;
-      }
-      .left {
-        width: 100%;
-        padding: 20px 10px;
-      }
-      .circle {
-        width: 50px;
-        height: 50px;
-        font-size: 12px;
-        margin: 40px auto;
-      }
-      .box {
-        font-size: 13px;
-        padding: 10px;
-      }
-      .header {
-        font-size: 24px;
-        padding: 15px;
       }
     }
   </style>
@@ -141,10 +129,10 @@
 
 <div class="header">TIMELINE TEMPLATE</div>
 
-<div class="timeline">
-  <!-- سمت چپ: دایره‌ها -->
-  <div class="left">
-    <div class="line"></div>
+<div class="timeline-container">
+  <!-- ستون دایره‌ها -->
+  <div class="circles">
+    <div class="circle-line"></div>
     <div class="circle y1998">1998</div>
     <div class="circle y2005">2005</div>
     <div class="circle y2008">2008</div>
@@ -153,8 +141,8 @@
     <div class="circle y2017">2017</div>
   </div>
 
-  <!-- سمت راست: توضیحات -->
-  <div class="right">
+  <!-- ستون مستطیل‌ها -->
+  <div class="boxes">
     <div class="box red">
       <h3>Lorem Ipsum</h3>
       <p>متن توضیحات مربوط به سال 1998</p>
