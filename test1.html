@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تایم‌لاین ۹ ماهه</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    /* خط مرکزی */
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #ccc;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+
+    .container {
+      padding: 20px 30px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+
+    /* دایره ماه */
+    .container::before {
+      content: attr(data-month);
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 50%;
+      background-color: #666;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+      top: 20px;
+      z-index: 1;
+    }
+
+    /* سمت راست */
+    .right {
+      left: 50%;
+    }
+
+    .right::before {
+      left: -30px;
+    }
+
+    /* سمت چپ */
+    .left {
+      left: 0;
+    }
+
+    .left::before {
+      right: -30px;
+    }
+
+    /* جعبه توضیحات */
+    .content {
+      padding: 20px;
+      background-color: #fff;
+      position: relative;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    /* رنگ‌بندی برای ۹ ماه */
+    .m1::before { background:#e53935; }  /* قرمز */
+    .m2::before { background:#fb8c00; }  /* نارنجی */
+    .m3::before { background:#fdd835; color:#000; } /* زرد */
+    .m4::before { background:#43a047; }  /* سبز */
+    .m5::before { background:#1e88e5; }  /* آبی */
+    .m6::before { background:#8e24aa; }  /* بنفش */
+    .m7::before { background:#00acc1; }  /* فیروزه‌ای */
+    .m8::before { background:#d81b60; }  /* صورتی */
+    .m9::before { background:#6d4c41; }  /* قهوه‌ای */
+
+    /* موبایل */
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 20px;
+      }
+
+      .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .container::before {
+        left: 0;
+        right: auto;
+      }
+
+      .left, .right {
+        left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>تایم‌لاین ۹ ماهه</h1>
+
+<div class="timeline">
+
+  <div class="container left m1" data-month="ماه ۱">
+    <div class="content">
+      <h2>عنوان ماه اول</h2>
+      <p>توضیحات مربوط به ماه اول.</p>
+    </div>
+  </div>
+
+  <div class="container right m2" data-month="ماه ۲">
+    <div class="content">
+      <h2>عنوان ماه دوم</h2>
+      <p>توضیحات مربوط به ماه دوم.</p>
+    </div>
+  </div>
+
+  <div class="container left m3" data-month="ماه ۳">
+    <div class="content">
+      <h2>عنوان ماه سوم</h2>
+      <p>توضیحات مربوط به ماه سوم.</p>
+    </div>
+  </div>
+
+  <div class="container right m4" data-month="ماه ۴">
+    <div class="content">
+      <h2>عنوان ماه چهارم</h2>
+      <p>توضیحات مربوط به ماه چهارم.</p>
+    </div>
+  </div>
+
+  <div class="container left m5" data-month="ماه ۵">
+    <div class="content">
+      <h2>عنوان ماه پنجم</h2>
+      <p>توضیحات مربوط به ماه پنجم.</p>
+    </div>
+  </div>
+
+  <div class="container right m6" data-month="ماه ۶">
+    <div class="content">
+      <h2>عنوان ماه ششم</h2>
+      <p>توضیحات مربوط به ماه ششم.</p>
+    </div>
+  </div>
+
+  <div class="container left m7" data-month="ماه ۷">
+    <div class="content">
+      <h2>عنوان ماه هفتم</h2>
+      <p>توضیحات مربوط به ماه هفتم.</p>
+    </div>
+  </div>
+
+  <div class="container right m8" data-month="ماه ۸">
+    <div class="content">
+      <h2>عنوان ماه هشتم</h2>
+      <p>توضیحات مربوط به ماه هشتم.</p>
+    </div>
+  </div>
+
+  <div class="container left m9" data-month="ماه ۹">
+    <div class="content">
+      <h2>عنوان ماه نهم</h2>
+      <p>توضیحات مربوط به ماه نهم.</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
